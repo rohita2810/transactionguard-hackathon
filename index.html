@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TransactionGuard - Fix it before your customer notices</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="nav"><span class="logo">🛡️ TransactionGuard</span><a href="#story">The Problem</a><a href="#how">How it works</a><a href="#demo">Live Demo</a><a href="#impact">Impact</a><a href="#real">Roadmap</a><a class="btn s" href="#demo">Try it live</a></div>
+
+<section class="hero"><div class="in-w"><span class="tag">Business Automation · Synthetic Transaction Monitoring + Autonomous Recovery</span>
+<h1>Fix it <em>before your customer</em> even notices.</h1>
+<p class="lead">A robot places fake orders 24/7. The moment a real customer would have been stuck, TransactionGuard finds the broken step and heals it on its own, in seconds, not hours.</p>
+<a class="btn" href="#demo">▶ Watch it heal live</a> <a class="btn o" href="#story">Why it matters</a>
+<svg class="hb" viewBox="0 0 640 70"><path d="M0 35 H200 L225 8 L255 62 L280 35 H640"/></svg></div></section>
+
+<section id="story" class="alt"><div class="in-w"><h2 class="rv">Meet Srija. It's 2 AM on sale night.</h2>
+<p class="sub rv">She taps <b>Pay</b> on a ₹20,000 phone. Behind the scenes, a software update has quietly broken payments. The website still loads. Every dashboard says "server is up."</p>
+<div class="grid g2"><div class="card rv"><h3>😟 Without TransactionGuard</h3><div class="tl" style="margin-top:12px">
+<div class="bad"><b>2:00</b>Payments start failing silently</div><div class="bad"><b>2:05</b>Srija gives up. Hundreds more do too</div><div class="bad"><b>2:30</b>Angry tweets and support calls</div><div class="bad"><b>2:45</b>Engineer woken up, starts searching</div><div class="bad"><b>3:30</b>Rolled back. Fixed.</div></div>
+<div class="big re" style="margin-top:14px"><span data-n="90">0</span> min</div><p>of lost sales and trust</p></div>
+<div class="card rv"><h3>😌 With TransactionGuard</h3><div class="tl" style="margin-top:12px">
+<div class="good"><b>2:00:00</b>Payments start failing</div><div class="good"><b>2:00:03</b>Robot's test order fails at "Pay"</div><div class="good"><b>2:00:04</b>Cause found: a bad release</div><div class="good"><b>2:00:06</b>Automatic rollback begins</div><div class="good"><b>2:00:12</b>Test order passes. Verified.</div></div>
+<div class="big gr" style="margin-top:14px"><span data-n="12">0</span> sec</div><p>and Srija never knew</p></div></div></div></section>
+
+<section id="how"><div class="in-w"><h2 class="rv">Four steps. Zero humans on the pager.</h2><p class="sub rv">Most monitors ask "is the server on?" We ask the question that matters: <b>"can a customer actually buy something?"</b></p>
+<div class="grid g4"><div class="card step rv"><div class="n">🤖</div><h3>1. Watch</h3><p>A synthetic robot shops from your catalog: login, browse, cart, pay, reserve stock. Every few seconds.</p></div>
+<div class="card step rv"><div class="n">🔍</div><h3>2. Spot</h3><p>The first failing step is pinpointed: which service, and whether it crashed or just got slow.</p></div>
+<div class="card step rv"><div class="n">🛠️</div><h3>3. Fix</h3><p>A playbook runs automatically: restart, scale out or roll back. No ticket, no wake-up call.</p></div>
+<div class="card step rv"><div class="n">✅</div><h3>4. Prove</h3><p>The robot repeats the order. Only a passing purchase closes the incident, and the recovery time is recorded.</p></div></div></div></section>
+
+<section id="demo" class="alt"><div class="in-w"><h2 class="rv">Don't take our word for it. Break something.</h2>
+<p class="sub rv">This is a live simulation. Pick a failure, then watch Guardian explain what it sees, fixes it, and proves it.</p>
+<div class="grid g2" style="grid-template-columns:repeat(auto-fit,minmax(340px,1fr));align-items:start">
+<div><div class="sc"><button class="btn s" data-s="pay">💳 Payment crashes</button><button class="btn s" data-s="inv">🗄️ Inventory slows down</button><button class="btn s" data-s="cat">📦 Catalog goes dark</button>
+<label><input type="checkbox" id="auto" checked> Auto-heal</label></div>
+<div class="pipe" id="pipe"></div><div class="say" id="say">All quiet. The robot is placing a test order every few seconds.</div>
+<div class="kp" id="kp"></div></div>
+<div class="card" style="text-align:center"><h3>📱 What a real customer sees</h3><div class="phone" id="phone"></div></div></div><div class="card" style="margin-top:18px"><h3>📦 Live inventory <span class="live" id="lv">● LIVE</span> <button class="btn s" id="rs" style="margin-left:auto">Restock</button></h3><div class="invtop" id="invtop"></div><div class="inv" id="inv"></div></div></div></section>
+
+<section id="impact"><div class="in-w"><h2 class="rv">Not just e-commerce. Any business that runs on transactions.</h2><p class="sub rv">The robot's script changes. The detect, fix and prove loop stays the same.</p>
+<div class="grid g4"><div class="card ind rv"><div class="e">🏦</div><h3>Banking &amp; UPI</h3><p>Login → check balance → send ₹1. Catches transfers failing while the app still opens.</p></div>
+<div class="card ind rv"><div class="e">🏥</div><h3>Hospitals</h3><p>Book slot → get SMS. Catches a dead SMS service before patients miss appointments.</p></div>
+<div class="card ind rv"><div class="e">💼</div><h3>Payroll</h3><p>Attendance → salary → bank transfer. Catches stuck salary runs on pay day.</p></div>
+<div class="card ind rv"><div class="e">🍔</div><h3>Food delivery</h3><p>Order → pay → rider assigned. Catches orders accepted but never dispatched.</p></div></div></div></section>
+
+<section id="real" class="alt"><div class="in-w"><h2 class="rv">What's real today, and where we're going.</h2>
+<div class="grid g2"><div class="card rv"><h3>🧪 This prototype</h3><p>The detect, diagnose, recover and verify logic and the catalog-to-inventory link are working. Services and failures are simulated in the browser.</p><div style="margin-top:12px"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Python + Flask</span><span class="pill">SQLite</span></div></div>
+<div class="card rv"><h3>🚀 Next</h3><p>Real HTTP probes against live APIs · real actions (Docker, Kubernetes, rollbacks) · Email and Telegram alerts · an AI layer (Claude API) that chooses what to test and explains incidents in plain English.</p></div></div></div></section>
+<footer>TransactionGuard · Built for the Business Automation Hackathon · Detect it. Fix it. Prove it.</footer>
+
+<script src="script.js"></script></body></html>
